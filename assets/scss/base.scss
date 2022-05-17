@@ -1,0 +1,16 @@
+// global
+@import "global/variables";
+@import "global/media";
+
+// base
+@import "base/fonts";
+@import "base/normalize";
+
+// components
+@import "components/typography";
+@import "components/btn";
+
+@import "components/header";
+@import "components/footer";
+
+@import "components/pane";

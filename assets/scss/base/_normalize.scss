@@ -1,0 +1,34 @@
+html {
+    font-size: $rootFontSize;
+
+    @include minmaxWidth($xs, $lg) {
+        font-size: $rootFontSizeResize;
+    }
+}
+
+body {
+    font-weight: normal;
+    color: $baseFontColor;
+    font-size: $baseFontSize;
+    font-family: $baseFontFamily;
+    line-height: $baseLineHeight;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, a {
+    font-family: $baseFontFamily;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-family: $baseFontFamily;
+}
+
+:focus {
+    box-shadow: none;
+}
