@@ -1,0 +1,48 @@
+.media-grid-boxes {
+  padding: 6rem 0 4rem;
+  position: relative;
+}
+
+.media-heading {
+  text-align: center;
+}
+.media-heading h3 {
+  color: #bd492d;
+}
+
+.media-col {
+  display: flex;
+}
+
+.media-card {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+  background-color: #f6b398;
+  border: 0.05rem solid #d9d9d9;
+}
+
+.media-image {
+  padding-top: 56.25%;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.media-content {
+  padding: 2rem;
+  flex: 1 0;
+  display: flex;
+  flex-direction: column;
+}
+.media-content h4 {
+  color: #bd492d;
+  flex: 1 0;
+}
+.media-content p {
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=media-grid.css.map */
