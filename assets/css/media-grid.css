@@ -2,7 +2,14 @@
   padding: 6rem 0 4rem;
   position: relative;
 }
-
+@media (max-width: 767px) {
+  .media-grid-boxes {
+    padding: 4rem 0;
+  }
+}
+.media-grid-boxes.alignfull .container {
+  max-width: 100%;
+}
 .media-heading {
   text-align: center;
 }
@@ -12,6 +19,26 @@
 
 .media-col {
   display: flex;
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+@media (max-width: 1279px) {
+  .media-col {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .media-col {
+    width: 100%;
+  }
+}
+@media (min-width: 1280px) {
+  .media-col:not(:first-child) {
+    padding-left: 2.2rem;
+  }
+  .media-col:not(:last-child) {
+    padding-right: 2.2rem;
+  }
 }
 
 .media-card {

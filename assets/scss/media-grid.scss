@@ -6,6 +6,21 @@
 .media-grid-boxes {
     padding: 6rem 0 4rem;
     position: relative;
+
+    @include maxWidth($sm) {
+        padding: 4rem 0;
+    }
+
+    &.alignfull {
+
+        .container {
+            max-width: 100%;
+        }
+    }
+
+    &.alignwide {
+        // do stuff
+    }
 }
 
 .media-heading {
@@ -18,6 +33,26 @@
 
 .media-col {
     display: flex;
+    flex: 0 0 auto;
+    width: 33.33333333%;
+
+    @include maxWidth($lg) {
+        width: 50%;
+    }
+
+    @include maxWidth($sm) {
+        width: 100%;
+    }
+
+    @include minWidth($lg) {
+        &:not(:first-child) {
+            padding-left: 2.2rem;
+        }
+
+        &:not(:last-child) {
+            padding-right: 2.2rem;
+        }
+    }
 }
 
 .media-card {
